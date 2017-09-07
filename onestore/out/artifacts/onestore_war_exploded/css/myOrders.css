@@ -1,0 +1,117 @@
+.main-logo{
+    width: 100%;
+    height: 80px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 40px;
+    padding: 10px;
+}
+
+.orders{
+    width: 100%;
+    background-color: powderblue;
+}
+
+.othersinfo{
+    width: 100%;
+    height: 30px;
+    float: left;
+    background-color: #e3e4e5;
+    margin-top: 20px;
+}
+.othersinfo span{
+    padding: 20px;
+}
+
+
+/*用于放商品信息 的左边div*/
+.orders-left{
+    width: 60%;
+    float: left;
+}
+
+.orders-product{
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+/*图片和名称*/
+.product-imgAndPname{
+    width: 60%;
+    float: left;
+}
+.product-imgAndPname img{
+    width: 50%;
+    height: 130px;
+    float: left;
+
+}
+.product-imgAndPname span{
+    color: cornflowerblue;
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 10px;
+}
+/*数量*/
+.product-count{
+    text-align: center;
+    color: #adadad;
+    float: left;
+    width: 20%;
+    margin-top: 65px;
+}
+/*价格*/
+.product-price{
+    text-align: center;
+    color: #adadad;
+    float: left;
+    width: 20%;
+    margin-top: 45px;
+}
+
+
+
+
+/*右边显示订单操作********************************************************************/
+.orders-right{
+    width: 40%;
+    height: 50px;
+    float: left;
+}
+
+.state{
+    width: 30%;
+    text-align: center;
+    color: #adadad;
+    float: left;
+}
+
+.state a{
+    color: blue;
+}
+
+/*order-operate订单操作*/
+.order-operate{
+    width: 70%;
+    text-align: center;
+    float: left;
+}
+
+.order-operate a{
+    color: blueviolet;
+}
+
+
+
+/***订单详细信息：收货地址、备注*****************************************************/
+.order-detail{
+    width: 40%;
+    float: right;
+
+}
+
+.order-detail p{
+    color: #adadad;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 15px;
+}

@@ -1,0 +1,59 @@
+/*顶端菜单div*/
+#topMenu{
+    height: 30px;
+    background-color: lightblue;
+}
+/*顶端菜单标识*/
+#topMenu01{
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 3px;
+    color: darkorchid;
+    font-size: medium;
+    font-style: oblique;
+    float: left;
+}
+
+#music{
+    float: left;
+    margin-left: 100px;
+}
+
+/*主菜单div*/
+#majorMenu{
+    height: 30px;
+    background-color: powderblue;
+}
+/*导航条类选择器*/
+.classspan{
+    width: 24.5%;
+    border: blanchedalmond 1px groove;
+    color: peru;
+    text-align: center;
+    font-family: "Adobe 黑体 Std R";
+    font-size: large;
+    float: left;
+}
+
+
+/*目录*/
+#category{
+    height: 544px;
+    width: 150px;
+    background-color: crimson;
+}
+
+/*商品列表*/
+#productList{
+    height: 544px;
+    width: 950px;
+    background-color: cornflowerblue;
+}
+
+/*广告列表*/
+#ad{
+    height: 544px;
+    width: 220px;
+    background-color: gold;
+}
+

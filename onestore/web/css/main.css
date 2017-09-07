@@ -1,0 +1,550 @@
+/*
+ * web商城样式
+ *
+ * by yt
+ */
+
+/* ==========================================================================
+   基础元素 样式设置，提高可重用性
+   ========================================================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * 并排放置带边框的框
+ *
+ */
+
+* {
+  -webkit-box-sizing: border-box; /* Safari */
+     -moz-box-sizing: border-box; /* Firefox */
+          box-sizing: border-box;
+}
+
+/*
+ * 设置背景颜色，字体和字体颜色
+ */
+
+body {
+  font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+  background-color: #f6f6f6;
+  color: #666;
+}
+/*
+ * 去除下划线
+ */
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover { cursor: pointer; }
+
+/*
+ * 去除li标签的小圆点,和其他样式
+ */
+
+li { list-style: none; }
+
+/*
+ * 清除浮动
+ */
+
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: "";
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/*
+ * 加载图标，icomoon app的加载方式
+ */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?1x2isk');
+  src:  url('../fonts/icomoon.eot?1x2isk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1x2isk') format('truetype'),
+    url('../fonts/icomoon.woff?1x2isk') format('woff'),
+    url('../fonts/icomoon.svg?1x2isk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+ * 各个图标样式代码
+ *
+ */
+ /*
+  * 钱图标
+  */
+.icon-money:before {
+  content: "\e905";
+}
+/*
+ * 搜索图标
+ */
+.icon-search:before {
+  content: "\e904";
+}
+/*
+ * 用户小人图标
+ */
+.icon-user:before {
+  content: "\e903";
+}
+
+/*
+ * 购物车图标
+ */
+.icon-cart:before {
+  content: "\e902";
+}
+
+/*
+ * 订单图标
+ */
+.icon-order:before {
+  content: "\e901";
+}
+/*
+ * 回到顶部图标
+ */
+.icon-top:before {
+  content: "\e900";
+}
+
+
+/*
+ * 整体布局，留白
+ *
+ */
+ .container {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1190px;
+ }
+
+
+
+/* ==========================================================================
+    导航条样式
+   ========================================================================== */
+
+nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: 20px;
+  background-color: #e3e4e5;
+}
+
+nav ul { display: inline-block; }
+
+nav a { color: #999; }
+
+/*
+ * 导航条左侧样式
+ *
+ */
+.nav-left { float: left; }
+
+.nav-left a:hover { color: #c00; }
+
+/*
+ * 导航条右侧样式
+ */
+.nav-right { float: right; }
+
+.nav-right a:hover { color: #f10215; }
+
+.nav-right li:not(:first-child) {
+  padding-left: 10px;
+  border-left: 1px solid #999;
+}
+
+/*
+ * 导航条内li标签的样式
+ */
+nav li {
+  display: inline;
+  margin-right: 6px;
+  font-size: 12px;
+}
+
+/*
+ * 登录按钮字体颜色样式
+ */
+a.h { color: #f22e00; }
+
+
+/* ==========================================================================
+    中间内容样式
+   ========================================================================== */
+.content { margin-bottom: 10px; }
+/*
+ * 左边栏样式
+ *
+ */
+.left-sidebar {
+  float: left;
+  margin-right: 1%;
+  width: 17%;
+  text-align: center;
+}
+/*
+ * logo图标样式
+ */
+.left-sidebar img {
+  width: 202px;
+  height: 150px;
+}
+
+/*
+ * 商品栏目样式
+ */
+.left-sidebar ul { background-color: #6e6568; }
+
+
+.left-sidebar li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+  line-height: 37px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.left-sidebar li:hover { background-color: #999395; }
+
+.left-sidebar a { color: #fff; }
+
+.left-sidebar a:hover { color: #e01222; }
+
+/*
+ * 中间样式,也是内容区域
+ *
+ */
+
+.main {
+  float: left;
+  width: 64%;
+}
+
+/*
+ * 搜索框样式
+ */
+.main .search { padding: 42px 15% 20px 15%; }
+
+.search input {
+  padding: 5px;
+  width: 90%;
+  height: 35px;
+  border: 1px solid #e01222;
+}
+
+.search button {
+  float: right;
+  width: 10%;
+  height: 35px;
+  background-color: #f10215;
+  border: none;
+}
+
+button i { color: #fff; }
+
+.search button:hover { cursor: pointer; }
+
+/*
+ * 小导航内容样式
+ */
+.main-nav {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.main-nav li {
+  float: left;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-nav a:hover { color: #e01222; }
+
+/*
+ * 滑动广告样式
+ */
+.main .banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.banner li { float: left; }
+
+/*
+ * dots是由unsilder插件生成的className,所以这是规定的，除非修改源码。代表小圆点指示器样式
+ *
+ */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -88px;
+  width: 176px;
+}
+
+.dot {
+  display:inline-block;
+  width: 10px;
+  height: 10px;
+  font-size: 0px;
+  line-height: 0px;
+  margin-right: 12px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.dot.active { background-color: #db192a; }
+
+/*
+ *
+ * 这是左右箭头指示器，可以修改，但是classname和id要一样，图片可以修改
+ *
+ */
+.arrow {
+  position: absolute;
+  top: 50%;
+}
+
+#al { left: 15px; }
+
+#ar { right: 15px; }
+
+
+/*
+ * 商品样式
+ */
+
+.items {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+.items ul{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.items li {
+  float: left;
+  display: inline-block;
+  padding: 10px;
+  width: 25%;
+  /* border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9; */
+}
+
+.items li:hover {
+  -webkit-box-shadow: 0 0 3px #999;
+     -moz-box-shadow: 0 0 3px #999;
+          box-shadow: 0 0 3px #999;
+}
+
+.items img {
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+}
+
+.items p {
+  word-wrap: break-word;
+  font-size: 10px;
+  cursor: pointer;
+  color: #666;
+}
+
+.items i { color: red; }
+
+.items span { color: #f10214; }
+
+
+
+/*
+ * 分页样式
+*/
+.limitdiv{
+  text-align: center;
+}
+
+.limitdiv span{
+  padding: 3px;
+}
+
+.limitdiv a{
+  color: blue;
+}
+
+.limitdiv input{
+  text-align: center;
+  width: 30px;
+}
+
+/*
+ * 右边栏样式
+ *
+ */
+
+.right-sidebar {
+  float: right;
+  margin-left: 1%;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 17%;
+  background-color: #fff;
+}
+
+/*
+ * 用户头像和登录和注册样式
+ */
+.right-sidebar .user {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.user img {
+  padding: 6px;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #d1b372;
+  border-radius: 50%;
+}
+
+.user-a { padding-top: 10px }
+
+.user-a a {
+  display: inline-block;
+  width: 70px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #e01222;
+  border: 2px solid #e01222;
+}
+
+.user-a a:hover {
+  background-color: #e01222;
+  color: #fff;
+}
+/*
+ * 滚动信息框样式
+ */
+.right-sidebar .info {
+  height: 200px;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  white-space: nowrap;/*添加了这几条才不会换行*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/*
+ * 滚动内容样式
+ */
+.right-sidebar p {
+  width: inherit;/*添加了这几条才不会换行*/
+  padding-left: 8px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*
+ * 未编辑广告样式
+ */
+.right-sidebar .ad {
+  height: 100px;
+  border-bottom: 3px solid #d1dae7;
+}
+
+/*
+  img广告样式
+*/
+.right-sidebar .ad a img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* ==========================================================================
+    底部样式
+   ========================================================================== */
+
+
+footer {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+
+
+/* ==========================================================================
+    最右边固定的导航条样式
+   ========================================================================== */
+
+.toolbar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+
+.toolbar li {
+  margin-bottom: 1px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #7a6e6e;
+}
+
+.toolbar li:hover {
+  cursor: pointer;
+  background-color: #f10214;
+}
+
+.toolbar i { color: #fff; }

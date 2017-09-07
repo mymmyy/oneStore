@@ -1,0 +1,199 @@
+.main-logo{
+    width: 100%;
+    height: 80px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 40px;
+    padding: 10px;
+}
+
+.my-li{
+    width: 100%;
+    height: 152px;
+}
+
+.my-li div{
+    padding: 5px;
+}
+
+.my-checkbox{
+    float: left;
+    padding: 5px;
+    width: 10%;
+}
+
+.my-pname{
+    font-family: "Microsoft YaHei UI";
+    float: left;
+    width: 20%;
+}
+
+.my-img{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.my-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.my-price{
+    color: red;
+    text-align: center;
+    float: left;
+    width: 10%;
+}
+
+.buy-button{
+    float: left;
+    width: 20%;
+}
+
+.my-li a{
+    float: left;
+    color: blueviolet;
+}
+
+.allprice{
+    padding-top: 100px;
+    margin-left: 60%;
+}
+
+.allprice span{
+    color: red;
+}
+
+.allprice button{
+    width: 30%;
+    font-size: larger;
+}
+
+.allprice a{
+    color: blueviolet;
+}
+
+
+.edit{
+    float: left;
+    width: 20%;
+    height: 70px;
+}
+
+.edit-num{
+    width: 50%;
+    background-color: bisque;
+    padding: 5px;
+    float: left;
+    height: 100%;
+}
+
+.edit-num input{
+    text-align: center;
+    width: 60%;
+    float: left;
+    height: 100%;
+}
+
+
+.edit-num-button{
+    width: 40%;
+    background-color: pink;
+    float: left;
+    height: 100%;
+}
+
+.edit-num-button button{
+    background-color: #999395;
+    width: 100%;
+    height: 50%;
+}
+
+.edit-sec{
+    width: 50%;
+    background-color: azure;
+    float: left;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+/*生成订单的form中的设置样式*/
+.order-items{
+    width: 100%;
+    padding-top: 50px;
+}
+
+.order-items ul{
+    width: 100%;
+    background-color: aquamarine;
+}
+.order-items ul li{
+    width: 100%;
+    height: 140px;
+    padding: 5px;
+    background-color: skyblue;
+}
+
+.order-img{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.order-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.order-price{
+    color: red;
+    text-align: center;
+    float: left;
+    width: 20%
+}
+
+.order-thisprice{
+    text-align: center;
+    float: left;
+    width: 20%
+}
+
+.order-thisprice span{
+    color: red;
+}
+
+
+/*生成完所有商品后 的订单操作*/
+.operator{
+    margin-left: 60%;
+}
+
+.operator span{
+    color: red;
+}
+
+.operator select{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: -130px;
+}
+
+/*button：确认提交*/
+.operator button{
+    width: 30%;
+    height: 30%;
+    background-color: red;
+    color: aliceblue;
+    font-size: large;
+    font-family: initial;
+}
+
+
+/*操作div中的 a：取消标签*/
+.operator a{
+    color: blue;
+    margin: 5px;
+}
+
+

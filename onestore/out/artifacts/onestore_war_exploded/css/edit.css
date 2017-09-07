@@ -1,0 +1,82 @@
+/*个人信息div*/
+#topinfo{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+#topinfo span{
+    color: orchid;
+    font-family: 张海山锐线体简;
+    font-size: 55px;
+    font-style: oblique;
+
+}
+/*回首页div*/
+#topinfo a{
+    color: darkblue;
+    font-family: 张海山锐线体简;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+/*用户信息div*/
+#info{
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left
+}
+/*修改a链接*/
+#xg{
+    margin-left: 100px;
+    margin-top: 80px
+}
+/*info div中的table*/
+#info table{
+    width: 335px;
+    height: 202px;
+    border-spacing: 20px;
+    border:3px solid lightblue;
+    background-color: #ffc0cb;
+    rules:none;
+}
+/*info div中显示错误信息的span*/
+#info span{
+    color: red;
+}
+
+/*店铺信息div*/
+#shopinfo{
+    float:left;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 250px;
+    height: 300px;
+    opacity: 0.6;
+    background-color: whitesmoke;
+}
+
+/*申请店铺div*/
+#applyshop{
+    float:left;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 250px;
+    height: 300px;
+    opacity: 0.6;
+    background-color: whitesmoke;
+}
+/*申请店铺div 的table*/
+#applyshop table{
+    border-spacing: 10px;
+    position:absolute;
+    margin-top: 100px;
+    rules:none;
+}
+.imgclass {
+    padding: 6px;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #d1b372;
+    border-radius: 50%;
+    text-align: center;
+}

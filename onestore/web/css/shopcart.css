@@ -1,0 +1,122 @@
+/*
+ * web商城购物车  css样式2
+ *
+ * by mym
+ */
+
+.main {
+    border: 1px solid darkgrey;
+    background-color: ghostwhite;
+}
+
+/*文字的位置：与上下部分间隔，行高*/
+.main-right-font{
+    padding: 10px;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+/*b标签*/
+.main-right b{
+
+}
+
+.main-right-pname{
+    font: 700 16px Arial,"microsoft yahei";
+    color: #666;
+
+}
+
+.dd{
+    font: 700 13px Arial,"microsoft yahei";
+    color: darkgray;
+}
+
+.p-price{
+    color: #E4393C;
+    font-family: "microsoft yahei";
+}
+
+
+
+
+/*商品图片等展示*/
+.main-left{
+    float: left;
+    width: 40%;
+    height: 350px;
+}
+
+/*商品图片展示div*/
+.main-left-imgdiv{
+    width: 100%;
+    height: 300px;
+    background-color: floralwhite;
+}
+/*商品图片展示div*/
+.main-left-imgdiv img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+/*商品其他信息：价格、名称等*/
+.main-right{
+    float: left;
+    width: 60%;
+}
+
+/*加入购物车按钮 进入商家店铺：shopid  进入我的购物车*/
+.main-right ul{
+    text-align: center;
+    padding: 10px;
+}
+
+.main-right ul li{
+    float:left;
+    text-align: inherit;
+    font-size: 28px;
+    width: 50%;
+    background-color: lightgray;
+}
+
+/*加入购物车div：包含input（手动输入商品购买数量）；1个div：做为加入购物车按钮*/
+.buy-button{
+    height: 70px;
+    width: 50%;
+    padding: 10px;
+}
+.buy-button-num{
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+.buy-button-num input{
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    float: left;
+}
+.buy-button-button{
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+.buy-button-button button{
+    height: 50%;
+    width: 100%;
+    border: 1px solid darkgrey;
+}
+
+.buy-button-addcart{
+    width: 60%;
+    height: 100%;
+    background-color: #f10215;
+    float: left;
+    text-align: center;
+
+}
+.buy-button-addcart a{
+    font-size: 22px;
+    padding-top: 10px;
+}

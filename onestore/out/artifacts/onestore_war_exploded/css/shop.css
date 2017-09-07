@@ -1,0 +1,142 @@
+/*topinfo **的商店div*/
+.topinfo{
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: transparent;
+    float: left;
+}
+/*topinfo **的商店span*/
+.topinfo span{
+    color: cornflowerblue;
+    font-family: 迷你简中特广告;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+/*搜索div*/
+.search{
+    position: absolute;
+    left: 180px;
+    top: 100px;
+}
+/*搜索输入框input*/
+.search input {
+    width: 350px;
+    height: 40px;
+    font-size: 28px;
+    border: currentColor;
+    background-color: darkseagreen;
+    float: left;
+}
+/*搜索圖標*/
+.search img{
+    margin-left: 3px;
+    float: left;
+}
+
+/*搜索按钮*/
+.addproduct {
+    font-size: 25px;
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 20px;
+}
+.toindex {
+    font-size: 18px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 28px;
+}
+
+/*商品列表的背景div*/
+
+/*没有商品时的div显示*/
+
+.product{
+    position: absolute;
+    margin-left: 20px;
+    top: 165px;
+    width: 94%;
+    height: auto;
+    border-width: 2px;
+    border-color: #adadad;
+    border-style: outset;
+    border-radius: 6px;
+    background-color: rgba(193,255,193,0.4);
+}
+/*商品信息div*/
+.proitem{
+    text-align: center;
+    float: left;
+    width: 160px;
+    height: 240px;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: ghostwhite;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-color: #adadad;
+    border-style: outset;
+    border-radius: 6px;
+    font-size: 13px;
+}
+/*图片div*/
+.proitem-img{
+    width: 96%;
+    height: 155px;
+    margin-top: 2px;
+    margin-left: 1px;
+    border-width: 2px;
+    border-color: #adadad;
+    border-style: outset;
+    border-radius: 6px;
+}
+.proitem img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*没有商品的显示*/
+.nolist{
+    width: 350px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 170px;
+    background-color: gainsboro;
+    margin-bottom: 50px;
+    border-width: 2px;
+    border-color: #adadad;
+    border-style: outset;
+    border-radius: 6px;
+}
+/*没有商品的显示*/
+.nolist span{
+    color: dimgrey;
+    font-size: 27px;
+    margin-left: 35px;
+}
+
+
+
+/*
+ * 分页样式
+*/
+/*
+.limitdiv{
+    text-align: center;
+}
+
+.limitdiv span{
+    padding: 3px;
+}
+
+.limitdiv a{
+    color: blue;
+}
+
+.limitdiv input{
+    text-align: center;
+    width: 30px;
+}*/
